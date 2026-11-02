@@ -1,68 +1,86 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# ===================================================
+# C / C++ (GCC, Clang, MSVC)
+# ===================================================
+# Исполняемые файлы
 *.exe
 *.out
 *.app
 
-# Build directories
+# Объектные файлы и промежуточные сборки
+*.o
+*.obj
+*.slo
+*.lo
+*.d
+*.gch
+*.pch
+
+# Отладочные и компоновочные файлы
+*.ilk
+*.pdb
+*.dwo
+
+# Библиотеки
+*.lib
+*.a
+*.la
+*.lai
+*.so
+*.dylib
+*.dll
+
+# Папки сборки и кэш компиляторов
 build/
 Build/
 build-*/
-
-# CMake generated files
+bin/
+cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
-install_manifest.txt
 compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
 .cache/
+
+# ===================================================
+# Python
+# ===================================================
+# Байткод и кэш
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальные окружения
+venv/
+.venv/
+env/
+ENV/
+
+# Кэш тестов и линтеров
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Переменные окружения и секреты
+.env
+
+# ===================================================
+# IDE и редакторы
+# ===================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+.vs/
+*.swp
+*.bak
+*.tmp
+
+# ===================================================
+# Тестовые данные ввода/вывода (опционально)
+# ===================================================
+*.in
+input.txt
+output.txt
